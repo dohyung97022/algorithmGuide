@@ -7,3 +7,4 @@
 * 자잘한 암기는 ankidroid에 기록   
 
 ### 2020-11-03
+[c++ 공부 youtube](https://www.youtube.com/watch?v=vLnPwxZdW4Y&t=3830s)   
