@@ -13,12 +13,12 @@ int main(){
         int iCount = 0;
         count[i] = 0;
         while (abcMemory/10 != 0){
-            if abcMemory%10 == i{
+            if (abcMemory%10 == i) {
                 count[i]++;
             }
             abcMemory = abcMemory/10;
         }
-        if abcMemory%10 == i {
+        if (abcMemory%10 == i) {
             count[i]++;
         }
     }
