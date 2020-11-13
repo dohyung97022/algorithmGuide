@@ -1,43 +1,50 @@
+//N을 for loop으로 돈다. (1~N까지, N포함)
+//d(n)에서 n이 한수인지 알아주는 func
+//vector<int>에서 각 자리의 수를 저장한다.
+//for loop을 vector에서 돌면서 각 자리의 수가 등차를 이루는지 확인
+//전부 등차를 이룬다면 한수, true를 리턴
+//true 라면 ncount를 ++하여 한수의 갯수를 count한다.
+
 #include <iostream>
+#include <vector>
 using namespace std;
-
-//도대체 왜 이건 안되는거지? 왜 다른거지?
-//10의 배수에서 다르게 나온다.
-//확인 10%10=0 이여서 10의 자리수의 1을 더하지 않는다.
-//틀린 정답이 맞다.
-int d2(int n){
-    int res = n;
-    while (n%10!=0){
-        res += n%10;
-        n= n/10;
+bool isHanSoo(int n){
+    vector<int> indexPlacedSingleDigets;
+    int i = 0;
+    do{
+        cout<<i;
+        indexPlacedSingleDigets[i] = n%10;
+        i++;
+    } while ((n/=10)!=0);
+    cout<<"working";
+    for (const int &singleDiget : indexPlacedSingleDigets){
+        cout<<singleDiget;
     }
-    return res;
+    if (i<=1){
+        //1자리수의 경우
+        return true;
+    }
+    // 1212 len 4
+    //2 1 2 1
+    //0 1 2 3
+    int dngCha = indexPlacedSingleDigets[0]-indexPlacedSingleDigets[1];
+    for (int i = 1; i<indexPlacedSingleDigets.size(); i++){
+        if (dngCha != indexPlacedSingleDigets[i-1]-indexPlacedSingleDigets[i]){
+            return false;
+        }
+    }
+    return true;
 }
-
-int d(int n){
-    int res = n;
-    do {
-        res += n %10;
-    } while ((n/= 10)!= 0);
-    return res;
-}
-
 int main(){
-    // for (int i=1; i<21; i++){
-    //     cout<<d(i)<<endl;
-    //     cout<<d2(i)<<endl;
-    // }
-    char checkList[100001];
-    int di = 0;
-    for (int i=1; i<10000; i++){
-        di = d(i);
-        if (di<=10000){
-            checkList[di] = 'X';
+    int N, hanSooCount=0;
+    cin>>N;
+    if (isHanSoo(10)==true){
+        cout<<"working";
+    }
+    for (int n=1; n<=N; n++){
+        if (isHanSoo(n)==true){
+            hanSooCount++;
         }
     }
-    for (int i=1; i<10000; i++){
-        if (checkList[i] != 'X'){
-            cout<<i<<endl;
-        }
-    }
+    cout<<hanSooCount;
 }

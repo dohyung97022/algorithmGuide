@@ -1,28 +1,40 @@
-생성자가 없는 셀프 넘버를 구하시오.
+//N을 for loop으로 돈다. (1~N까지, N포함)
+//d(n)에서 n이 한수인지 알아주는 func
+//vector<int>에서 각 자리의 수를 저장한다.
+//for loop을 vector에서 돌면서 각 자리의 수가 등차를 이루는지 확인
+//전부 등차를 이룬다면 한수, true를 리턴
+//true 라면 ncount를 ++하여 한수의 갯수를 count한다.
 
-int d(int n){
-    int deviderMemory = n;
-    int res = n;
-    while (deviderMemory%10!=0){
-        res += deviderMemory%10;
-        deviderMemory = deviderMemory/10;
-    }
-    return res;
-}
-
+#include <iostream>
+#include <vector>
+using namespace std;
 int main(){
-    char checkList[100001];
-    int di = 0;
-    for (int i=0; i<10000; i++){
-        d(i)의 결과가 나온다면 그 결과는 틀린 값이 된다.
-        di = d(i);
-        if (di<=10000){
-            checkList[di] = "X";
+    ios::sync_with_stdio(false);
+    cout.tie(NULL);
+    cin.tie(NULL);
+    int N, hanSooCount=0;
+    cin>>N;
+    for (int n=1; n<=N; n++){
+        if (isHanSoo(n)){
+            hanSooCount++;
         }
     }
-    for (int i=1; i<10000; i++){
-        if (checkList[i] != "X"){
-            cout<<i<<endl;
+    cout<<hanSooCount;
+}
+bool isHanSoo(int n){
+    ios::vector<int> indexPlacedSingleDigets {};
+    int i = 0;
+    do{
+        indexPlacedSingleDigets[i] = n%10;
+        i++;
+    } while ((n/=10)!=0);
+    if (i==1){
+        return true;
+    }
+    int dngCha = indexPlacedSingleDigets[0]-indexPlacedSingleDigets[1];
+    for (int i = 1; i<indexPlacedSingleDigets.len(); i++){
+        if (dngCha == indexPlacedSingleDigets[i]-indexPlacedSingleDigets[i+1]){
+
         }
     }
 }
