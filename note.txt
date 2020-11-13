@@ -1,3 +1,28 @@
-func var(int a...){
-    
+생성자가 없는 셀프 넘버를 구하시오.
+
+int d(int n){
+    int deviderMemory = n;
+    int res = n;
+    while (deviderMemory%10!=0){
+        res += deviderMemory%10;
+        deviderMemory = deviderMemory/10;
+    }
+    return res;
+}
+
+int main(){
+    char checkList[100001];
+    int di = 0;
+    for (int i=0; i<10000; i++){
+        d(i)의 결과가 나온다면 그 결과는 틀린 값이 된다.
+        di = d(i);
+        if (di<=10000){
+            checkList[di] = "X";
+        }
+    }
+    for (int i=1; i<10000; i++){
+        if (checkList[i] != "X"){
+            cout<<i<<endl;
+        }
+    }
 }
