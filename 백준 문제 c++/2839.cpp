@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int A,B,C,N=0;
-    cin>>A>>B>>C;
-    if (B>=C){
+    int sugar,fiveMultiplier=0,bagCount=0;
+    cin>>sugar;
+    while (sugar>=fiveMultiplier*5){
+        fiveMultiplier++;
+    }
+    fiveMultiplier--;
+    while (fiveMultiplier > 0 && (sugar-fiveMultiplier*5)%3 != 0 ){
+        fiveMultiplier--;
+    }
+    if ((sugar-fiveMultiplier*5)%3 != 0){
         cout<<-1;
         return 0;
     }
-    cout<<A/(C-B)+1;
+    cout<<fiveMultiplier+(sugar-fiveMultiplier*5)/3;
 }
 
-// A>=N*(C-B)
-
-// b는 반드시 c보다 커야한다. 같아도 안된다.
-// b>c조건
-
-
-// A/(C-B)>=N
-
-// A/(C-B)+1
-
-
-//WOW.
-//부등호가 나올 경우 =으로 생각하여 식으로 바꿀 수 있다!
+//5의 배수인 경우
