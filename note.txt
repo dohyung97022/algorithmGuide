@@ -1,16 +1,23 @@
-시작 위치                       도착 지점
-    0         1         2            3
-   속도
-           -1,0,1     0,1,2        0,1,2
-              1         1            1
-
-
-    n
-            n-1,n,n+1   
-
-
-
-    45        46         48           49         50
-   속도
-            -1,0,1      0,1,2       1,2,3       0,1,2
-               1          2           1           1
+#include<iostream>
+using namespace std;
+int main(){
+        int testCase, sosuCount=0;
+        cin>>testCase;
+        for (int i=0; i<testCase; i++){
+                int checkSosu,checkDevidedBy2;
+                bool isSosu=true;
+                cin>>checkSosu;
+                checkDevidedBy2 = checkSosu/2;
+                for (int i2=2; i2<checkDevidedBy2; i2++){
+                     if (checkSosu%i2 == 0){
+                        isSosu=false;
+                        goto break;
+                     }   
+                }
+                break:
+                if (isSosu){
+                        sosuCount++;
+                }
+        }
+        cout<<sosuCount;
+}
