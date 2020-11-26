@@ -1,23 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
-        int testCase, sosuCount=0;
-        cin>>testCase;
-        for (int i=0; i<testCase; i++){
-                int checkSosu,checkDevidedBy2;
-                bool isSosu=true;
-                cin>>checkSosu;
-                checkDevidedBy2 = checkSosu/2;
-                for (int i2=2; i2<checkDevidedBy2; i2++){
-                     if (checkSosu%i2 == 0){
-                        isSosu=false;
-                        goto break;
-                     }   
-                }
-                break:
-                if (isSosu){
-                        sosuCount++;
-                }
-        }
-        cout<<sosuCount;
+    int input;
+    for (cin>>input){
+    bool *isSosuArry[input*2] = new bool[input*2]{false};
+    
+    }
 }
+
+
+
+//체를 활용해보자.
+// 소수가 나오면 그 갯수를 더하고,
+// 소수의 배수를 빼는 작업을 하는 것이다.
+// 소수의 배수가 나아가고 있을 때 그 수가 입력의 2배를 초과하면 break.
+//bool[] array도 사용해보자.
