@@ -38,5 +38,5 @@ void maxEl()
 }
 int main()
 {
-    maxEl();
+    lowerb();
 }
