@@ -7,6 +7,9 @@
         "ostream": "cpp",
         "sstream": "cpp",
         "regex": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
