@@ -24,4 +24,10 @@ int main()
     {
         cout << val.first << " " << val.second << " ";
     }
+
+    auto result = unorderIntStrMap.find(10);
+    if (result != unorderIntStrMap.end())
+    {
+        cout << "found " << result->first << result->second;
+    }
 }
