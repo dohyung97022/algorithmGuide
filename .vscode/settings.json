@@ -13,6 +13,7 @@
         "unordered_set": "cpp",
         "iosfwd": "cpp",
         "forward_list": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "tuple": "cpp"
     }
 }
