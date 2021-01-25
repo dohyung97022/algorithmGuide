@@ -1,4 +1,6 @@
 //http://melonicedlatte.com/algorithm/2018/02/04/145104.html
+//https://www.youtube.com/watch?v=wGmJatvjANY
+//https://www.youtube.com/watch?v=kftYiqN5_HI
 // 여기가 설명이 잘 되어 있다.
 // 내일 다시 풀어보자...
 // 재귀적 호출에서 어떤 느낌인지 알겠지만...
