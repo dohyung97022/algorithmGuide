@@ -17,6 +17,7 @@
         "tuple": "cpp",
         "map": "cpp",
         "cstring": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "array": "cpp"
     }
 }
