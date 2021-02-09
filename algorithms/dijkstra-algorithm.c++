@@ -13,7 +13,9 @@ int d[7];
 
 void dijkstra(int start)
 {
+    d[start] = 0;
     priority_queue<pair<int, int>> pq;
+    pq.push(make_pair(0, start));
     while (!pq.empty())
     {
         int distance = -pq.top().first;
