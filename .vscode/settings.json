@@ -18,6 +18,7 @@
         "map": "cpp",
         "cstring": "cpp",
         "type_traits": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "utility": "cpp"
     }
 }
