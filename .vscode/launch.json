@@ -5,6 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.java.algorithmGuide.backjoon.Main",
+            "projectName": "algorithmGuide_a33669f4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "java.com.backjoon.Main",
+            "projectName": "algorithmGuide_a33669f4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "java.backjoon.Main",
+            "projectName": "algorithmGuide_a33669f4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "java.백준.Main",
+            "projectName": "algorithmGuide_a33669f4"
+        },
+        {
             "name": "(Windows) 시작",
             "type": "cppvsdbg",
             "request": "launch",
