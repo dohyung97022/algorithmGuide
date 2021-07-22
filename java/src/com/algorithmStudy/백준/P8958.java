@@ -1,4 +1,4 @@
-package com.algorithmStudy;
+package com.algorithmStudy.백준;
 
 import java.util.Scanner;
 
