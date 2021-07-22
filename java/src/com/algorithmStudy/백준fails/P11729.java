@@ -1,4 +1,4 @@
-package com.algorithmStudy;
+package com.algorithmStudy.백준fails;
 
 //  1개만 옮기면 되는 경우
 //  옮긴다
@@ -44,3 +44,10 @@ public class P11729 {
 // 실패의 원인
 // 하노의 탑 마지막 단계를 빼먹었다.
 // int[] tower 로 문제를 복잡하게 만들었다.
+
+// 하노의 탑은 4단계 전략으로 생각하자.
+
+// 1개면 그냥 옮긴다.
+// n-1 개를 중간으로 옮긴다.
+// 바닥을 옮긴다.
+// n-1 개를 끝으로 옮긴다.
