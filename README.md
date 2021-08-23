@@ -107,4 +107,48 @@
   </details>
   <br>
 
+  <details>
+  <summary>
+  퀵 정렬
+  </summary>
+  <br>
+
+  원리
+  
+  ![](img/quick-sort-gif.gif)   
+  
+  1. pivot 을 정하여 pivot 을 기준으로 좌측에 더 작은 수, 우측에 더 큰 수를 배치한다.
+  2. 분할정복으로 반복한다.
+  
+  low 와 high 를 순차적으로 중앙을 향해 이동합니다.   
+  분할정복을 활용하고 있습니다.   
+  
+  
+  시간복잡도   
+  Best : O(n^2)   
+  Avg : O(n^2)   
+  Worse : O(n^2)
+  </details>
+  <br>
+
+  <details>
+  <summary>
+  병합 정렬
+  </summary>
+  <br>
+
+  원리
+  
+  ![](img/merge-sort.png)
+  병합정렬은 분할과 병합으로 이루어져 있습니다.   
+  병합정렬의 경우 병합 단계에서 정렬을 합니다.   
+  분할정복을 활용하고 있습니다.   
+
+  시간복잡도   
+  Best : O(log₂n)   
+  Avg : O(log₂n)   
+  Worse : O(log₂n)   
+  </details>
+  <br>
+
 
