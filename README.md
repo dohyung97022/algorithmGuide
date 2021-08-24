@@ -123,6 +123,7 @@
   low 와 high 를 순차적으로 중앙을 향해 이동합니다.   
   분할정복을 활용하고 있습니다.   
   
+  Arrays.sort() 에 dual-pivot 형태로 사용되고 있다.      
   
   시간복잡도   
   Best : O(n^2)   
@@ -146,6 +147,22 @@
 
   시간복잡도   
   Best : O(log₂n)   
+  Avg : O(log₂n)   
+  Worse : O(log₂n)   
+  </details>
+  <br>
+
+  <details>
+  <summary>
+  팀 정렬
+  </summary>
+  <br>
+
+  합병정렬의 최악의 경우(O(log₂n)) 삽입정렬의 최선의 경우(O(n))가 결합된 알고리즘    
+  파이선, 자바의 소트에 널리 사용되고 있다.   
+  Collections.sort() 에 사용되는 알고리즘   
+
+  Best : O(n)   
   Avg : O(log₂n)   
   Worse : O(log₂n)   
   </details>
