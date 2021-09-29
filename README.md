@@ -130,8 +130,8 @@
   Arrays.sort() 에 dual-pivot 형태로 사용되고 있다.
   
   시간복잡도   
-  Best : O(n^2)   
-  Avg : O(n^2)   
+  Best : O(nlogn)   
+  Avg : O(nlogn)   
   Worse : O(n^2)
   </details>
   <br>
